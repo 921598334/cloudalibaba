@@ -26,14 +26,37 @@
     </properties>
 
     <dependencies>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+
         </dependency>
+
+        <!--nacos服务注册发现-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+
+
+
+        <!--nacos请求负载均衡-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-loadbalancer</artifactId>
+            <version>2.2.0.RELEASE</version>
+        </dependency>
+
+
 
 
 
@@ -91,14 +114,6 @@
 <!--                <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
             </dependency>
 
-
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
 
         </dependencies>
     </dependencyManagement>
