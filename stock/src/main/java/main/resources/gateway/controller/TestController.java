@@ -22,6 +22,14 @@ public class TestController {
 
 
 
+    @RequestMapping("/loginErr")
+    public String login(){
+
+        return "需要进行登录";
+    }
+
+
+
     @RequestMapping("/getSocket")
     public String getSocket(@RequestParam(name="orderId",defaultValue="") String orderId) throws IOException {
 

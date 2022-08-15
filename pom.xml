@@ -13,18 +13,7 @@
         <module>order</module>
         <module>stock</module>
         <module>gateway1</module>
-        <!--        <module>gateway</module>-->
-<!--        <module>order-nacos</module>-->
-<!--        <module>stock-nacos</module>-->
-<!--        <module>order-ribbon</module>-->
-<!--        <module>order-loadbalancer</module>-->
-<!--        <module>order-openfeign</module>-->
-<!--        <module>product-nacos</module>-->
-<!--        <module>config-nacos</module>-->
-<!--        <module>order-sentinel</module>-->
-<!--        <module>seata</module>-->
-<!--        <module>order-openfeign-sentinel</module>-->
-<!--        <module>gateway</module>-->
+
     </modules>
 
     <name>cloudalibaba</name>
