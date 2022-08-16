@@ -10,9 +10,11 @@
     <!--每添加一个服务就要添加-->
 
     <modules>
-        <module>order</module>
+
         <module>stock</module>
         <module>gateway1</module>
+
+        <module>order2</module>
 
     </modules>
 
@@ -42,6 +44,13 @@
 <!--        </dependency>-->
 
 
+
+        <!-- SkyWalking 工具类， 跟服务版本一致 -->
+        <dependency>
+            <groupId>org.apache.skywalking</groupId>
+            <artifactId>apm-toolkit-trace</artifactId>
+            <version>8.5.0</version>
+        </dependency>
 
 
         <!--SpringBoot基本场景启动-->

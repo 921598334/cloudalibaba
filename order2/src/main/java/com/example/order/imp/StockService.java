@@ -13,6 +13,6 @@ public interface StockService {
 
     // 声明需要调用的rest接口对应的方法
     @RequestMapping("/getSocket")
-    String getSocket(@RequestParam(name="orderId",defaultValue="") String orderId);
+    String getSocket(@RequestParam(name = "orderId", defaultValue = "") String orderId);
 
 }

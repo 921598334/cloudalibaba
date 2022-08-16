@@ -3,6 +3,9 @@ package com.example.order.controller;
 
 
 import com.example.order.imp.StockService;
+import org.apache.skywalking.apm.toolkit.trace.Tag;
+import org.apache.skywalking.apm.toolkit.trace.Tags;
+import org.apache.skywalking.apm.toolkit.trace.Trace;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
@@ -38,6 +41,11 @@ public class TestController {
     @Autowired
     StockService stockService;
 
+    //在skywalking中进行追踪
+    @Trace
+    //追踪返回值和请求参数
+    @Tags({@Tag(key="getAll",value="returnedObj"),
+            @Tag(key="getAll",value="arg[0]")})
     @RequestMapping("/getStock")
     public String getStock() throws Exception {
 
