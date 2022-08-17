@@ -2,6 +2,9 @@ package com.example.order.controller;
 
 
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.example.order.imp.StockService;
 import org.apache.skywalking.apm.toolkit.trace.Tag;
 import org.apache.skywalking.apm.toolkit.trace.Tags;
@@ -43,7 +46,7 @@ public class TestController {
 
     //在skywalking中进行追踪
     @Trace
-    //追踪返回值和请求参数
+    //最终返回值和请求参数
     @Tags({@Tag(key="getAll",value="returnedObj"),
             @Tag(key="getAll",value="arg[0]")})
     @RequestMapping("/getStock")
@@ -55,4 +58,7 @@ public class TestController {
         System.out.println(re);
         return re;
     }
+
+
+
 }

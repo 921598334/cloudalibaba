@@ -45,6 +45,25 @@
 
 
 
+
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba.csp</groupId>-->
+<!--            <artifactId>sentinel‐transport‐simple‐http</artifactId>-->
+<!--&lt;!&ndash;            <version>1.8.0</version>&ndash;&gt;-->
+<!--        </dependency>-->
+
+
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
+
+
+
+
+
         <!-- SkyWalking 工具类， 跟服务版本一致 -->
         <dependency>
             <groupId>org.apache.skywalking</groupId>

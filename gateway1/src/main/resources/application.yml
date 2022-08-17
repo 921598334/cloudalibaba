@@ -4,6 +4,10 @@ spring:
   application:
     name: api-gateway
   cloud:
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8858
+
     # gateway的配置
     gateway:
 
