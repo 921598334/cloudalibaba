@@ -1,0 +1,15 @@
+
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8858
+#      web-context-unify: false  # 默认将调用链路收敛, 导致链路流控效果无效
+#      datasource:
+#        flow-rule:
+#          nacos:
+#            server-addr: 122.114.178.53:8847
+#            username: nacos
+#            password: nacos
+#            dataId: order-sentinel-flow-rule
+#            rule-type: flow
