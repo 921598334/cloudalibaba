@@ -9,6 +9,7 @@
 6.主类名称修改
 7.maven->clean,install
 
+
 如果提示找不到主类可以参考：
 https://www.bigtspace.com/archives/9697.html
 
