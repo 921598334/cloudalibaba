@@ -16,6 +16,11 @@
 
         <module>order2</module>
 
+        <module>masterClient</module>
+        <module>nettyClient1</module>
+        <module>analiesService1</module>
+        <module>common</module>
+
     </modules>
 
     <name>cloudalibaba</name>
@@ -53,6 +58,11 @@
 <!--        </dependency>-->
 
 
+
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.alibaba.cloud</groupId>

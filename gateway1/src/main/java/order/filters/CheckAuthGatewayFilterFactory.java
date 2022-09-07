@@ -52,7 +52,7 @@ import java.util.List;
     }
 
     public GatewayFilter apply(HttpStatus httpStatus, URI uri) {
-        return this.apply(new HttpStatusHolder(httpStatus, (Integer)null), uri);
+        return this.apply(new HttpStatusHolder(httpStatus, null), uri);
     }
 
 

@@ -1,0 +1,15 @@
+server:
+  port: 8020
+  # 应用名称 （nacos会将该名称当做服务名称）
+spring:
+  application:
+    name: netty-client1
+  cloud:
+    nacos:
+      server-addr: 122.114.178.53:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
+
+
